@@ -1,0 +1,898 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* =================================================== header ================================================*/
+
+.header{
+    width:100%;
+    height: 75px;
+    background-color: rgba(0, 103, 100, 0.5);
+    border: 2px black solid;
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+}
+.i0{
+    font-size: 40;
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 18;
+    margin-left: 20;
+}
+.i6{
+    font-size: 20;
+    color: rgb(77, 76, 76);
+    margin-top: 30 ;
+    margin-left: -240;
+}
+.list{
+    float: right;
+    margin-top: 24;
+    margin-right: 35;
+    
+}
+.list li{
+    display: inline-block;
+    margin: 6px;
+    position: relative;
+}
+.list li a{
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    font-size: 17px;
+}
+.input{
+    float:left;
+    margin-left:50px;
+    margin-top: 23;
+    width: 250;
+    height: 30;
+    border-radius: 20px;
+}
+.header ul li:after{
+    content :"";
+    position: absolute;
+    width: 0;
+    height:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    opacity:0 ;
+    margin-top: 20px;
+}
+.header ul li:hover::after{
+    width:100% ;
+    height: 2px;
+    opacity: 0.7;
+}
+
+/* =================================================== home ================================================*/
+
+.home {
+    width: 100%;
+    height:  100vh ;
+    background-image: url(../Images/person-using-ar-technology-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:  rgba(16, 26, 26, 0.5);
+}
+.home-content {
+     width: 60%;
+     /* hero image  */
+     position: absolute;
+     top :50% ;
+     left: 50%;
+     transform: translate( -50%  , -50% );
+     text-align: center;
+}
+.home-title {
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.home-p {
+    color: #dfdfdf;
+    margin: 20px  0px ;
+    letter-spacing: 2px;
+}
+.home-btn {
+    width: 145px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.home-btn2 {
+    background-color: blue;
+    color :#fff;
+    margin-left: 10px;
+}
+.home-btn:hover {
+    opacity: 0.5 ;
+}
+
+/* =================================================== welcome-to-website ================================================*/
+
+.welcome-to-website{
+    overflow: auto;
+}
+h2 , .title-featured-works{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40;
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.line{
+    background-color:rgb(0, 138, 138);
+    width: 300px;
+    height: 2px;
+    margin: auto;
+}
+.welcome-to-website-div{
+    background-color:rgb(255, 255, 255);
+    width: 320;
+    height: 200;
+    border: 1px solid rgb(0, 142, 152);
+    float: left;
+    border-radius: 10px;
+    margin-top: 50;
+    position: relative;
+}
+.welcome-to-website-div2{
+    margin: 50 90;
+}
+.welcome-to-website-div1{
+    margin-left: 40;
+}
+.p1{
+    background-color:rgba(110, 192, 189, 0.9);
+    color: rgb(0, 0, 0);
+    font-size: 25;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    margin-top: 1;
+}
+.p2{
+    color:rgb(97, 97, 97);
+    font-size: 15;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 10 ;
+}
+.i11{
+    color:rgba(0, 164, 159, 0.9);
+    font-size: 35;
+    margin: 20 140;
+}
+.welcome-to-website-link{
+    text-decoration: none;
+    font-weight: bold;
+    color:  rgb(0, 117, 101);
+    margin-left: 120px;
+    font-size: 15;
+    margin-top: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+.welcome-to-website-div:hover .p2{
+    color: black;
+    font-weight: bold;
+}
+.welcome-to-website-div:hover .p1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.welcome-to-website-div:after{
+    content: "";
+    position:absolute;
+    width: 0 ;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 0.5s ;
+    background-color: rgba(0, 107, 121, 0.5);
+    opacity: 0;
+}
+.welcome-to-website-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/* =================================================== featured-works ================================================*/
+
+.featured-works{
+    width: 100%;
+    height: 650px;
+    overflow: auto;
+    background-color: rgba(1, 127, 127, 0.347);
+    margin-top: 100;
+    margin-bottom: 100;
+}
+.featured-works-div{
+    width: 300;
+    height: 200;
+    border: 1px solid white;
+    float: left;
+    border-radius: 10px;
+    margin-top: 50;
+}
+.featured-works-div2 {
+    margin: 50 100;
+}
+.featured-works-div1{
+    margin-left: 50;
+}
+.featured-works-div5 , .featured-works-div6{
+    margin-top: -200;
+    margin-left: 50;
+}
+.featured-works-div6{
+    margin-left: 452;
+}
+.featured-works-div1{
+    background-image: url(../Images/wallpaper-artificial-intelligence.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.featured-works-div2{
+    background-image: url(../Images/wallpaper-artificial-intelligence02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.featured-works-div3{
+    background-image: url(../Images/wallpaper-google-s-artificial03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.featured-works-div4{
+    background-image: url(../Images/ai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.featured-works-div5{
+    background-image: url(../Images/wallpaper-c-programming-c-programming-language.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.featured-works-div6{
+    background-image: url(../Images/desktop-wallpaper-web-developer-and-i-oop-computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.featured-works-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(42, 78, 84, 0.5);
+    visibility: hidden;
+}
+.category , .floral-perfume{
+    color: rgba(254, 254, 254, 0.7);
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30;
+    text-align: center;
+}
+.floral-perfume{
+    font-size: 15;
+    margin-top: 20;
+}
+.btn-pintesest , .btn-love{
+    width: 40;
+    height: 30;
+    border-radius: 10px;
+    color: rgb(103, 101, 101);
+    margin-top: 20;
+    margin-left: 100;
+    cursor: pointer;
+}
+.btn-pintesest{
+    background-image: url(../Images/pngwing.com.png);
+    background-size: cover;
+    background-position: center;
+}
+.btn-love{
+    margin-left: 5;
+    background-image: url(../Images/heart-icon-3351.png);
+    background-size: cover;
+    background-position: center;
+}
+.featured-works-div:hover .featured-works-overlay{
+    visibility:visible;
+}
+
+/* =================================================== what-we-offer ================================================ */
+
+.what-we-offer{
+    width: 100%;
+    height: 630;
+}
+.what-we-offer-div{
+    background-color:#ffffff;
+    width: 300;
+    height: 200;
+    border: 1px solid rgb(0, 255, 251);
+    float: left;
+    border-radius: 10px;
+    margin-left: 80;
+    position: relative;
+}
+.what-we-offer-div2, .what-we-offer-div5{
+    margin-left:  80;
+}
+.what-we-offer-div4, .what-we-offer-div5, .what-we-offer-div6{
+    margin-top: 20;
+}
+.what-we-offer-div:hover .p2{
+    color: black;
+    font-weight: bold;
+}
+.what-we-offer-div:hover .p1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.what-we-offer-div:after{
+    content: "";
+    position: absolute;
+    width: 0 ;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 0.5s ;
+    background-color: rgba(0, 107, 121, 0.5);
+    opacity: 0;
+}
+.what-we-offer-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+}
+
+/* =================================================== why-choose-us ================================================ */
+
+.container-why-choose-us{
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    margin-top: 30;
+    margin-bottom: 100;
+}
+.line5{
+    background-color:rgb(0, 138, 138);
+    width: 50;
+    height: 2px;
+    margin-left: 10;
+    margin-top: 10;
+}
+.why-choose-us-div1{
+    width: 500;
+    height: 500;
+    float: left;
+    margin-left: 100px;
+}
+.why-choose-us-div12{
+    position: relative;
+    width: 500;
+    height: 500;
+    background-color: black;
+    overflow: auto;
+    text-align: center;
+}
+.why-choose-us-div21{
+    width: 400;
+    height: 410;
+    margin: 0 130;
+    background-image:url(../Images/wp8669228.jpg);
+    background-repeat: no-repeat;
+    margin-top: 0;
+    background-size: contain;
+    position: absolute;
+    
+}
+.i3{
+    color: rgb(82, 87, 87);
+    font-size: 20;
+    margin-left: 5;
+    float: right;
+    margin: auto;
+    margin-top: 425;
+}
+.i31{
+    margin-right: 220;
+}
+.i32{
+    margin-left:4 ;
+    margin-right:4 ;
+}
+.title-why-choose-us{
+    margin-left: 0;
+}
+.choose{
+    color: rgb(71, 68, 68);
+    font-size: 17;
+    margin-top: 20;
+}
+.choose-title{
+    font-size: 40;
+    font-weight: bold;
+}
+.pr{
+    margin-top: 50;
+}
+.i3:hover{
+    color: rgb(91, 128, 185);
+}
+
+/* =================================================== under-why-choose-us ================================================ */
+
+.under-why-choose-us{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url(../Images/Arduino.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 100;
+    margin-bottom: 50;
+}
+.under-why-choose-us-div {
+    width: 200;
+    height: 200;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    margin-top: 200;
+    font-size: 25;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50;
+    color: rgb(0, 0, 0);
+}
+.under-why-choose-us-div1{
+    padding-top: 50;
+    margin-left: 70;
+}
+.under-why-choose-us-div2{
+    margin-left: 350;
+}
+.under-why-choose-us-div3{
+    margin-left: 650;
+}
+.under-why-choose-us-div4{
+    margin-left: 950;
+}
+.i4{
+    color: rgb(255, 255, 255);
+    font-size: 40;
+    margin-bottom: 10;
+    font-weight: bold;
+}
+.under-why-choose-us-text, .under-why-choose-us-title{
+    color: #c34b00;
+    font-weight: bold;
+}
+
+/* =================================================== pricing-table ================================================ */
+
+.pricing-table{
+    width:100%;
+    height: 500;
+    margin-top: 20;
+    margin-bottom: 100;
+}
+.pricing-table-title{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+.line2{
+    width: 100;
+    margin: auto;
+    margin-top: 10;
+}
+.pricing-table-parent{
+    overflow: auto;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.pricing-table-div{
+    background-color:#ffffff;
+    width: 300;
+    height: 380;
+    border: 1px solid rgb(0, 204, 255);
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.pricing-table-div2{
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+.pricing-table-div3{
+    text-align: center;
+    border-radius: 10px;
+}
+.pricing-table-p1 , .pricing-table-p2 , .pricing-table-p3{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 30;
+}
+.pricing-table-P1{
+    background-color:blueviolet
+}
+.pricing-table-P2{
+    background-color: gold;
+    color: rgb(6, 6, 6);
+}
+.pricing-table-P3{
+    background-color:rgb(255, 102, 0);
+}
+.pricing-table-circle1 ,.pricing-table-circle2 ,.pricing-table-circle3{
+    width: 100;
+    height: 100;
+    border-radius: 50%;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 20;
+    margin-top: 20;
+    padding: 1 2;
+}
+.pricing-table-circle1{
+    background-color: blueviolet;
+}
+.pricing-table-circle2{
+    background-color: gold;
+}
+.pricing-table-circle3{
+    background-color:rgb(255, 102, 0);
+}
+.pricing-table-p4 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 17;
+    margin-top: 10;
+}
+.pricing-table-p7{
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 15;
+}
+.pricing-table-p8{
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 15;
+}
+.pricing-table-btn1, .pricing-table-btn2, .pricing-table-btn3{
+    width: 200px;
+    height: 30px;
+    background-color:blueviolet;
+    color: rgb(255, 255, 255);
+    margin-top: 30;
+}
+.pricing-table-btn2{
+    background-color: gold;
+    color: black;
+}
+.pricing-table-btn3{
+    background-color:rgb(255, 102, 0);
+}
+.pricing-table-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3 ;
+}
+.pricing-table-div:after{
+    content: "";
+    position: absolute;
+    width: 100% ;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 1s ;
+    background-color: rgba(0, 107, 121, 0.5);
+}
+
+/* =================================================== under-pricing-table ================================================ */
+
+.under-pricing-table{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url(../Images/blue-concrete-textured-wall_53876-94000.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+    margin-top: 100;
+    margin-bottom: 50;
+}
+.line3{
+    width: 70;
+}
+.under-pricing-table-div{
+    width: 400;
+    height: 300;
+    float: left;
+    margin: 100 100;
+}
+.circle-img1, .circle-img2{
+    width: 100;
+    height: 100;
+    border-radius: 100%;
+    background-color: cadetblue;
+    margin-top: 40;
+}
+.circle-img1{
+    background-image: url(../Images/1333.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.circle-img2{
+    background-image: url(../Images/photo_2024-10-15_09-13-42.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.under-pricing-table-div1-name, .under-pricing-table-div1-name2{
+    font-size: 30;
+    color: rgb(116, 253, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+    margin-left: 120;
+    margin-top: -70;
+}
+.under-pricing-table-div1-name2{
+    margin-top: -40;
+    font-size: 20;
+    color: rgb(0, 0, 0);
+}
+.under-pricing-table-div1-pragraph{
+    font-weight: bold;
+    margin-top: 5;
+    font-size: 15;
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 120;
+}
+
+/* =================================================== our-team ================================================ */
+
+.our-team{
+    width: 100%;
+    height: 500;
+    margin-bottom: 50;
+}
+.our-team-div{
+    width: 270;
+    height: 350;
+    background-color: #00465a73;
+    border: 1px solid white;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin: 50 75;
+}
+.our-team-div2{
+    margin: 50 50;
+}
+.our-team-img1, .our-team-img2, .our-team-img3{
+    width: 200;
+    height: 250;
+    position: absolute;
+    margin: 20 30;
+}
+.our-team-img1{
+    background-image: url(../Images/Employee01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team-img2{
+    background-image: url(../Images/Employee02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team-img3{
+    background-image: url(../Images/Employee03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team-info{
+    position: relative;
+    margin-top: 270;
+}
+.our-team-info-h3{
+    font-size: 20;
+    color: white;
+    margin-top: 35;
+}
+.our-team-info-h4{
+    font-size: 20;
+    color: rgb(7, 61, 105);
+    margin-top: 10;
+}
+.our-team-img-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 93, 93, 0.7);
+    position: relative;
+    visibility: hidden; 
+}
+.i5{
+    font-size: 35;
+    display: block;
+    margin-left: 170;
+    color:rgb(30, 30, 119);
+    margin-top: 0;
+}
+.our-team-div:hover .our-team-overlay{
+    visibility: visible;
+}
+.our-team-div:hover::after{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.3 ;
+}
+.our-team-div:after{
+    content: "";
+    position: absolute;
+    width: 100% ;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 1s ;
+    background-color: rgb(0, 0, 0);
+}
+
+/* =================================================== recent-news ================================================ */
+
+.recent-news{
+    width:100%;
+    height:600px ;
+    margin-top: -30;
+    margin-bottom: 50;
+}
+.recent-news-title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+}
+.recent-news-line{
+    margin-top: 10;
+    width: 200;
+}
+.recent-news-container{
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    margin-top: 30;
+}
+.recent-news-containt{
+    overflow: auto;
+}
+.recent-news-item1{
+    float: left;
+    background-color: #ffffff;
+    width: 30%;
+    height: 450;
+    padding: 10px  10px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    border:2px solid rgb(2, 129, 129);
+}
+.recent-news-img-content{
+    margin-top: 10;
+}
+.item2{
+    margin: 0px  5%;
+}
+.recent-news-img1{
+    width: 100%;
+    border-radius: 20px;
+}
+.namel{
+    font-size: 15;
+    color: #000000;
+}
+.recent-news-img-name{
+    font-size: 15;
+    color: #808080;
+}
+.name2{
+    margin-left:25;
+}
+.name3{
+    margin-right: 25;
+}
+.name5{
+    color:#808080;
+    margin-bottom: -20;
+}
+.name4{
+    color: #000000;
+    margin-top: 20;
+}
+.name6{
+    text-decoration: none;
+    font-size: 17;
+    color: #005c4d;
+}
+.recent-news-item1:after{
+    content :"";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    background-color: rgba(0, 107, 121, 0.5);
+    opacity: 0;
+    border-radius: 20px;
+}
+.recent-news-item1:hover::after{
+    width:100% ;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+/* =================================================== The-end ================================================ */
+
+.the-end{
+    width: 100%;
+    height: 350px;
+    background-color: #005457;
+    text-align: center;
+}
+.the-end-img{
+    border-radius: 30px; 
+    margin-top: 30;
+}
+.i7{
+    color: #808080;
+    font-size: 40;
+    margin: 0 3px;
+}
+.the-end-final{
+    color: #808080;
+    margin-top: 15px;
+}
